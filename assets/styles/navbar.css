@@ -1,0 +1,95 @@
+.navbar {
+  padding: 13px 0;
+  background-color: pink;
+}
+
+.navbar-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.btns-and-menu-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.menu-on-desktop {
+  display: none;
+}
+
+.logo-bmw img {
+  max-width: 34.5px;
+}
+
+.btns-contacts {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.btn-default-navbar {
+  width: 165px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-default-navbar-contact {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.btn-default-whatsapp {
+  color: var(--color-white);
+  background-color: var(--color-green);
+}
+.btn-default-navbar i {
+  font-size: 19px;
+}
+.show-btn-on-desktop {
+  display: none;
+}
+
+.quotation {
+  background-color: var(--color-blue);
+}
+.quotation-content {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quotation-content p {
+  color: var(--color-white);
+}
+
+.show-quotation-on-mobile {
+  display: flex;
+}
+@media (min-width: 1280px) {
+  .navbar {
+    padding: 30px 0;
+  }
+  .btn-default-navbar-contact {
+    color: var(--color-white);
+    background-color: var(--color-black);
+  }
+  .show-btn-on-desktop {
+    display: flex;
+  }
+  .menu-on-desktop {
+    display: flex;
+  }
+  .show-quotation-on-mobile {
+    display: none;
+  }
+  .logo-bmw img {
+    max-width: 92px;
+  }
+}
