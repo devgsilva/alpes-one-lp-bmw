@@ -284,6 +284,9 @@
         </div>
       </div>
     </footer>
+    <div class="extra-form-action">
+      <div class="btn-minimize" id="minimize">Minimizar</div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
@@ -293,6 +296,19 @@
         slidesToScroll: 1,
         dots: true,
         arrows: false,
+      });
+    </script>
+    <script>
+      $(document).ready(function () {
+        var btnsQuotation = $(".quotation-btn");
+        var extraForm = $(".extra-form-action");
+        var btnMinimizeForm = $("#minimize");
+        btnsQuotation.click(function () {
+          extraForm.toggleClass("extra-form-action-click-button");
+        });
+        btnMinimizeForm.click(function () {
+          extraForm.toggleClass("extra-form-action-click-button");
+        });
       });
     </script>
   </body>

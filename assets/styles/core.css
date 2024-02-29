@@ -12,6 +12,15 @@ button {
   border: none;
 }
 
+body {
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+
+body:has(.extra-form-action-click-button) {
+  overflow: hidden;
+}
+
 .container {
   padding: 0 5%;
 }
