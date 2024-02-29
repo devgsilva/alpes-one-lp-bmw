@@ -218,6 +218,41 @@ footer {
   justify-content: center;
 }
 
+.extra-form-content {
+  width: 100%;
+  background-color: var(--color-white);
+  padding: 30px 16px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.title-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-form i {
+  font-size: 28px;
+  color: var(--color-blue);
+}
+
+.title-form-text {
+  font-family: "BMWTypeNext-Light", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--color-dark);
+}
+
+.extra-form {
+  width: calc(100% - 32px);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
 @media (min-width: 600px) {
   .main-vehicles-introduction {
     grid-template-columns: repeat(2, 1fr);

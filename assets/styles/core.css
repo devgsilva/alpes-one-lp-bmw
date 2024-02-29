@@ -21,6 +21,21 @@ body:has(.extra-form-action-click-button) {
   overflow: hidden;
 }
 
+input,
+select,
+option,
+textarea {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #666666;
+  font-family: "BMWTypeNext-Light", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 14px;
+  line-height: 17px;
+  padding-bottom: 10px;
+}
+
 .container {
   padding: 0 5%;
 }
