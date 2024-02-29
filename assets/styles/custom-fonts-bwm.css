@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "BMWTypeNext-Light";
+  font-display: swap;
+  src: local("BMWTypeNext-Light"), url("../fonts/BMWTypeNext-Light.20210426144302.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BMWTypeNext-Bold";
+  font-display: swap;
+  src: local("BMWTypeNext-Bold"), url("../fonts/BMWTypeNext-Bold.20210426144302.ttf") format("truetype");
+}

@@ -8,12 +8,15 @@
     <link rel="icon" type="image/x-icon" href="./assets/imgs/logos/logo-bmw-rio.svg" />
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="./assets/styles/core.css" />
-    <link rel="stylesheet" href="./assets/styles/colors.css" />
-    <link rel="stylesheet" href="./assets/styles/navbar.css" />
-    <link rel="stylesheet" href="./assets/styles/app.css" />
-    <link rel="stylesheet" href="./assets/styles/bmw-icons.css" />
-    <link rel="stylesheet" href="./assets/styles/bmw-icons-codes.css" />
+    <link rel="stylesheet" href="./assets/styles/custom-fonts-bwm.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/core.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/colors.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/app.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/bmw-icons.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/bmw-icons-codes.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header>
@@ -45,11 +48,252 @@
           </div>
         </div>
       </nav>
-      <div class="quotation show-quotation-on-mobile">
+      <div class="quotation quotation-btn show-quotation-on-mobile">
         <div class="quotation-content">
           <p>Solicite uma cotação</p>
         </div>
       </div>
+      <div class="hero-slider">
+        <div class="hero-slider-content hero-slider-slick">
+          <div class="hero-slider-item">
+            <picture>
+              <source media="(max-width: 599px)" srcset="./assets/imgs/banners/mobile-banner.png" />
+              <source media="(min-width: 600px)" srcset="./assets/imgs/banners/desktop-banner.jpg" />
+              <img src="./assets/imgs/banners/desktop-banner.jpg" alt="BWM BANNER" />
+            </picture>
+          </div>
+          <div class="hero-slider-item">
+            <picture>
+              <source media="(max-width: 599px)" srcset="./assets/imgs/banners/mobile-banner.png" />
+              <source media="(min-width: 600px)" srcset="./assets/imgs/banners/desktop-banner.jpg" />
+              <img src="./assets/imgs/banners/desktop-banner.jpg" alt="BWM BANNER" />
+            </picture>
+          </div>
+          <div class="hero-slider-item">
+            <picture>
+              <source media="(max-width: 599px)" srcset="./assets/imgs/banners/mobile-banner.png" />
+              <source media="(min-width: 600px)" srcset="./assets/imgs/banners/desktop-banner.jpg" />
+              <img src="./assets/imgs/banners/desktop-banner.jpg" alt="BWM BANNER" />
+            </picture>
+          </div>
+        </div>
+      </div>
     </header>
+    <main>
+      <section class="main-vehicles">
+        <div class="container">
+          <div class="main-vehicles-content">
+            <div class="main-vehicles-title section-title">
+              <h2>ESCOLHA SEU BMW</h2>
+            </div>
+            <div class="main-vehicles-introduction">
+              <div class="main-vehicles-item">
+                <div class="main-vehicles-item-image">
+                  <img src="./assets/imgs/veiculos/serie1.png" alt="" />
+                </div>
+                <div class="main-vehicles-item-title">
+                  <h3>BMW Série 1</h3>
+                </div>
+                <div class="main-vehicles-item-btns-call-actions">
+                  <button class="quotation-btn main-vehicles-item-btn main-vehicles-item-btn-quotation">Cotação</button>
+                  <div class="main-vehicles-item-btn main-vehicles-item-btn-call">
+                    <a href="tel:2120424442" class="">Ligar</a>
+                  </div>
+                </div>
+                <div class="main-vehicles-item-midias">
+                  <p>Compartilhe</p>
+                  <div class="main-vehicles-item-btns-midias">
+                    <a href="#"><i class="icon-facebook"></i></a>
+                    <a href="#"><i class="icon-whatsapp"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="main-vehicles-item">
+                <div class="main-vehicles-item-image">
+                  <img src="./assets/imgs/veiculos/m3.png" alt="" />
+                </div>
+                <div class="main-vehicles-item-title">
+                  <h3>BMW M3 Competition</h3>
+                </div>
+                <div class="main-vehicles-item-btns-call-actions">
+                  <button class="quotation-btn main-vehicles-item-btn main-vehicles-item-btn-quotation">Cotação</button>
+                  <div class="main-vehicles-item-btn main-vehicles-item-btn-call">
+                    <a href="tel:2120424442" class="">Ligar</a>
+                  </div>
+                </div>
+                <div class="main-vehicles-item-midias">
+                  <p>Compartilhe</p>
+                  <div class="main-vehicles-item-btns-midias">
+                    <a href="#"><i class="icon-facebook"></i></a>
+                    <a href="#"><i class="icon-whatsapp"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="main-vehicles-item">
+                <div class="main-vehicles-item-image">
+                  <img src="./assets/imgs/veiculos/m5.png" alt="" />
+                </div>
+                <div class="main-vehicles-item-title">
+                  <h3>BMW M5</h3>
+                </div>
+                <div class="main-vehicles-item-btns-call-actions">
+                  <button class="quotation-btn main-vehicles-item-btn main-vehicles-item-btn-quotation">Cotação</button>
+                  <div class="main-vehicles-item-btn main-vehicles-item-btn-call">
+                    <a href="tel:2120424442" class="">Ligar</a>
+                  </div>
+                </div>
+                <div class="main-vehicles-item-midias">
+                  <p>Compartilhe</p>
+                  <div class="main-vehicles-item-btns-midias">
+                    <a href="#"><i class="icon-facebook"></i></a>
+                    <a href="#"><i class="icon-whatsapp"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="main-vehicles-item">
+                <div class="main-vehicles-item-image">
+                  <img src="./assets/imgs/veiculos/x2.png" alt="" />
+                </div>
+                <div class="main-vehicles-item-title">
+                  <h3>BMW X2</h3>
+                </div>
+                <div class="main-vehicles-item-btns-call-actions">
+                  <button class="quotation-btn main-vehicles-item-btn main-vehicles-item-btn-quotation">Cotação</button>
+                  <div class="main-vehicles-item-btn main-vehicles-item-btn-call">
+                    <a href="tel:2120424442" class="">Ligar</a>
+                  </div>
+                </div>
+                <div class="main-vehicles-item-midias">
+                  <p>Compartilhe</p>
+                  <div class="main-vehicles-item-btns-midias">
+                    <a href="#"><i class="icon-facebook"></i></a>
+                    <a href="#"><i class="icon-whatsapp"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="main-vehicles-item">
+                <div class="main-vehicles-item-image">
+                  <img src="./assets/imgs/veiculos/serie-4.png" alt="" />
+                </div>
+                <div class="main-vehicles-item-title">
+                  <h3>BMW Série 4</h3>
+                </div>
+                <div class="main-vehicles-item-btns-call-actions">
+                  <button class="quotation-btn main-vehicles-item-btn main-vehicles-item-btn-quotation">Cotação</button>
+                  <div class="main-vehicles-item-btn main-vehicles-item-btn-call">
+                    <a href="tel:2120424442" class="">Ligar</a>
+                  </div>
+                </div>
+                <div class="main-vehicles-item-midias">
+                  <p>Compartilhe</p>
+                  <div class="main-vehicles-item-btns-midias">
+                    <a href="#"><i class="icon-facebook"></i></a>
+                    <a href="#"><i class="icon-whatsapp"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="main-vehicles-item">
+                <div class="main-vehicles-item-image">
+                  <img src="./assets/imgs/veiculos/serie-3.png" alt="" />
+                </div>
+                <div class="main-vehicles-item-title">
+                  <h3>BMW Série 3</h3>
+                </div>
+                <div class="main-vehicles-item-btns-call-actions">
+                  <button class="quotation-btn main-vehicles-item-btn main-vehicles-item-btn-quotation">Cotação</button>
+                  <div class="main-vehicles-item-btn main-vehicles-item-btn-call">
+                    <a href="tel:2120424442" class="">Ligar</a>
+                  </div>
+                </div>
+                <div class="main-vehicles-item-midias">
+                  <p>Compartilhe</p>
+                  <div class="main-vehicles-item-btns-midias">
+                    <a href="#"><i class="icon-facebook"></i></a>
+                    <a href="#"><i class="icon-whatsapp"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="main-vehicles-item">
+                <div class="main-vehicles-item-image">
+                  <img src="./assets/imgs/veiculos/z4.png" alt="" />
+                </div>
+                <div class="main-vehicles-item-title">
+                  <h3>BMW Z4</h3>
+                </div>
+                <div class="main-vehicles-item-btns-call-actions">
+                  <button class="quotation-btn main-vehicles-item-btn main-vehicles-item-btn-quotation">Cotação</button>
+                  <div class="main-vehicles-item-btn main-vehicles-item-btn-call">
+                    <a href="tel:2120424442" class="">Ligar</a>
+                  </div>
+                </div>
+                <div class="main-vehicles-item-midias">
+                  <p>Compartilhe</p>
+                  <div class="main-vehicles-item-btns-midias">
+                    <a href="#"><i class="icon-facebook"></i></a>
+                    <a href="#"><i class="icon-whatsapp"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="main-vehicles-item">
+                <div class="main-vehicles-item-image">
+                  <img src="./assets/imgs/veiculos/serie2.png" alt="" />
+                </div>
+                <div class="main-vehicles-item-title">
+                  <h3>BMW Série 2</h3>
+                </div>
+                <div class="main-vehicles-item-btns-call-actions">
+                  <button class="quotation-btn main-vehicles-item-btn main-vehicles-item-btn-quotation">Cotação</button>
+                  <div class="main-vehicles-item-btn main-vehicles-item-btn-call">
+                    <a href="tel:2120424442" class="">Ligar</a>
+                  </div>
+                </div>
+                <div class="main-vehicles-item-midias">
+                  <p>Compartilhe</p>
+                  <div class="main-vehicles-item-btns-midias">
+                    <a href="#"><i class="icon-facebook"></i></a>
+                    <a href="#"><i class="icon-whatsapp"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-container">
+          <div class="footer-text">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a elementum orci, vitae commodo nibh. In vitae convallis nisl. Morbi rhoncus mattis purus sed commodo. Integer rhoncus ex risus. Proin efficitur elit nunc, ut pulvinar massa egestas in. Fusce quis quam viverra, pretium quam
+              ac, consectetur lectus.
+            </p>
+          </div>
+          <div class="footer-copyright-logos-content">
+            <div class="logo-bmw-content">
+              <img src="./assets/imgs/logos/logo-bmw-rio.svg" alt="" />
+            </div>
+            <div class="copyright-content">
+              <p>© Copyright © 2021 Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="logo-alpes-one-content">
+              <p>Feito por:</p>
+              <img src="./assets/imgs/logos/logo-alpes.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+      $(".hero-slider-slick").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+      });
+    </script>
   </body>
 </html>

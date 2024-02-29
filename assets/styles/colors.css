@@ -1,6 +1,9 @@
 :root {
   --color-white: #ffffff;
-  --color-black: #000000;
+  --color-dark: #000000;
   --color-green: #25d366;
   --color-blue: #1c69d4;
+  --color-custom-dark: #262626;
+  --color-gray: #666666;
+  --color-gray-light: #e6e6e6;
 }

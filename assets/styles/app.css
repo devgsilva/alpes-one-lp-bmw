@@ -1,0 +1,214 @@
+.hero-slider-item {
+  width: 100%;
+  cursor: pointer;
+}
+
+.hero-slider-item picture,
+.hero-slider-item picture img {
+  width: 100%;
+  height: 100%;
+  max-height: 430px;
+  object-fit: cover;
+}
+
+.slick-dots {
+  top: auto !important;
+  bottom: 20px !important;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: #1c69d4 !important;
+}
+.slick-dots li button {
+  box-shadow: #00000029;
+}
+.slick-dots li button:before {
+  font-size: 14px !important;
+  color: #e6e6e6 !important;
+  opacity: 1 !important;
+}
+
+.main-vehicles-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+
+.main-vehicles-title {
+  width: 100%;
+  text-align: center;
+}
+
+.main-vehicles-title h2 {
+  font-family: "BMWTypeNext-Light", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.main-vehicles-introduction {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px;
+}
+.main-vehicles-item-image {
+  width: 100%;
+  text-align: center;
+}
+
+.main-vehicles-item-title {
+  margin-top: 10px;
+}
+.main-vehicles-item-title h3 {
+  font-family: "BMWTypeNext-Light", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 26px;
+}
+.main-vehicles-item-image img {
+  width: 100%;
+  max-width: 276px;
+}
+
+.main-vehicles-item-btns-call-actions {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.main-vehicles-item-btn {
+  width: 100%;
+  height: 35px;
+  max-height: 100%;
+  text-align: center;
+  font-size: 12px;
+  font-family: "BMWTypeNext-Bold", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.main-vehicles-item-btn-quotation {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.main-vehicles-item-btn-call {
+  background-color: var(--color-gray);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-vehicles-item-midias {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  color: var(--color-gray);
+}
+
+.main-vehicles-item-midias p {
+  font-size: 12px;
+  line-height: 15px;
+  font-family: "BMWTypeNext-Light", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.main-vehicles-item-btns-midias {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.main-vehicles-item-btns-midias a i {
+  font-size: 24px;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 60px;
+  background-color: var(--color-gray-light);
+  padding: 30px 0;
+}
+.footer-text {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.footer-text p {
+  font-size: 10px;
+  line-height: 16px;
+  color: var(--color-custom-dark);
+  font-family: "BMWTypeNext-Light", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.footer-copyright-logos-content {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  color: var(--color-dark);
+  border-top: 1px solid #bbbbbb;
+}
+
+.logo-bmw-content {
+  display: none;
+}
+
+.copyright-content {
+  text-align: center;
+  font-size: 10px;
+  line-height: 12px;
+  font-family: "BMWTypeNext-Light", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+.logo-alpes-one-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.logo-alpes-one-content p {
+  font-size: 12px;
+  line-height: 15px;
+  font-family: "BMWTypeNext-Light", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+@media (min-width: 1280px) {
+  .hero-slider-item picture,
+  .hero-slider-item picture img {
+    max-height: 780px;
+  }
+  .main-vehicles-introduction {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main-vehicles-item-btns-call-actions {
+    flex-direction: column;
+  }
+  .main-vehicles-item-btn-call {
+    display: none;
+  }
+  .logo-bmw-content {
+    display: block;
+  }
+  .footer-copyright-logos-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .logo-bmw-content img {
+    width: 100%;
+    height: 100%;
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
