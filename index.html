@@ -393,29 +393,37 @@
     <a href="https://api.whatsapp.com/send?phone=" class="whatsapp-floating-mobile whatsapp-btn">
       <i class="icon-whatsapp"></i>
     </a>
+    <div class="custom-nav-bar-fixed-on-desktop">
+      <div class="custom-nav-bar-fixed-logo">
+        <img src="./assets/imgs/logos/logo-bmw-rio.svg" alt="" />
+      </div>
+      <div class="custom-nav-bar-fixed-btn quotation-btn">Solicitar cotação</div>
+    </div>
     <div class="extra-form-action">
-      <div class="btn-minimize" id="minimize">Minimizar</div>
-      <div class="extra-form-content">
-        <div class="title-form">
-          <i class="icon-carro"></i>
-          <div class="title-form-text">Solicitar cotação</div>
+      <div class="extra-form-action-content">
+        <div class="btn-minimize" id="minimize">Minimizar</div>
+        <div class="extra-form-content">
+          <div class="title-form">
+            <i class="icon-carro"></i>
+            <div class="title-form-text">Solicitar cotação</div>
+          </div>
+          <form action="" class="extra-form">
+            <input type="text" name="nome" id="nome" placeholder="Nome" />
+            <input type="email" name="email" id="email" placeholder="E-mail" />
+            <input type="text" name="telefone" id="telefone" placeholder="Telefone" />
+            <select name="carros" id="carros">
+              <option value="bwm">BWM M5</option>
+            </select>
+            <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+            <div class="form-group form-group-checkbox">
+              <input type="checkbox" id="accept" name="accept" />
+              <label for="#">Aceito a <b>Política de Privacidade</b>.</label>
+            </div>
+            <div class="form-group">
+              <button type="submit" class="btn-submit-extra-form">Enviar</button>
+            </div>
+          </form>
         </div>
-        <form action="" class="extra-form">
-          <input type="text" name="nome" id="nome" placeholder="Nome" />
-          <input type="email" name="email" id="email" placeholder="E-mail" />
-          <input type="text" name="telefone" id="telefone" placeholder="Telefone" />
-          <select name="carros" id="carros">
-            <option value="bwm">BWM M5</option>
-          </select>
-          <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
-          <div class="form-group form-group-checkbox">
-            <input type="checkbox" id="accept" name="accept" />
-            <label for="#">Aceito a <b>Política de Privacidade</b>.</label>
-          </div>
-          <div class="form-group">
-            <button type="submit" class="btn-submit-extra-form">Enviar</button>
-          </div>
-        </form>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -427,19 +435,6 @@
         slidesToScroll: 1,
         dots: true,
         arrows: false,
-      });
-    </script>
-    <script>
-      $(document).ready(function () {
-        var btnsQuotation = $(".quotation-btn");
-        var extraForm = $(".extra-form-action");
-        var btnMinimizeForm = $("#minimize");
-        btnsQuotation.click(function () {
-          extraForm.toggleClass("extra-form-action-click-button");
-        });
-        btnMinimizeForm.click(function () {
-          extraForm.toggleClass("extra-form-action-click-button");
-        });
       });
     </script>
     <script>
@@ -457,6 +452,35 @@
             prevArrow: '<i class="icon-seta-a-esquerda"></i>',
             nextArrow: '<i class="icon-seta-a-direita"></i>',
           });
+        });
+      });
+    </script>
+    <script>
+      $(document).scroll(function () {
+        var positionScrollOnTop = $(document).scrollTop();
+        if (positionScrollOnTop > 150) {
+          $(".custom-nav-bar-fixed-on-desktop").addClass("custom-nav-bar-fixed-on-desktop-enable");
+        } else {
+          $(".custom-nav-bar-fixed-on-desktop").removeClass("custom-nav-bar-fixed-on-desktop-enable");
+        }
+      });
+    </script>
+
+    <script>
+      $(document).ready(function () {
+        var btnsQuotation = $(".quotation-btn");
+        var extraForm = $(".extra-form-action");
+        var customNavFixEnable = $(".custom-nav-bar-fixed-on-desktop-enable");
+        var btnMinimizeForm = $("#minimize");
+        btnsQuotation.click(function () {
+          if ($(".custom-nav-bar-fixed-on-desktop").hasClass("custom-nav-bar-fixed-on-desktop-enable") == true) {
+            extraForm.toggleClass("extra-form-action-click-button");
+          } else {
+            extraForm.toggleClass("extra-form-action-click-button");
+          }
+        });
+        btnMinimizeForm.click(function () {
+          extraForm.toggleClass("extra-form-action-click-button");
         });
       });
     </script>
