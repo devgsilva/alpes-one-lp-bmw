@@ -139,12 +139,14 @@
   .logo-bmw img {
     max-width: 92px;
   }
-  .menu-slider-slick.slick-slider {
-    display: flex;
+  .menu-slider-slick.slick-slider.addDisplayFlex {
+    display: flex !important;
+    transition: all 0.3s ease-in-out;
   }
+
   .menu-slider-slick {
     width: 100%;
-    display: flex;
+    display: none;
     align-items: center;
     gap: 30px;
     padding: 60px 5%;
