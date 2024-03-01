@@ -110,6 +110,9 @@
 .show-quotation-on-mobile {
   display: flex;
 }
+.menu-slider-slick {
+  display: none;
+}
 @media (min-width: 1280px) {
   .navbar {
     padding: 30px 0;
@@ -140,7 +143,7 @@
     max-width: 92px;
   }
   .menu-slider-slick.slick-slider.addDisplayFlex {
-    display: flex !important;
+    display: flex;
     transition: all 0.3s ease-in-out;
   }
 
