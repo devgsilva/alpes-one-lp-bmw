@@ -403,7 +403,6 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-left: 30px;
     height: 60px;
     width: 100%;
     background-color: var(--color-white);
@@ -417,6 +416,7 @@ footer {
     max-width: 40px;
     height: 100%;
     max-height: 40px;
+    padding-left: 30px;
   }
   .custom-nav-bar-fixed-btn {
     font-family: "BMWTypeNext-Bold", Arial, Helvetica, sans-serif;
