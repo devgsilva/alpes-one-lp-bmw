@@ -16,7 +16,7 @@
    </div>
     <div>
      <ul>
-       <li>Conexão com Internet (para conexão a cdn do <a href="https://developers.google.com/speed/libraries?hl=pt-br">jquery</a> e da lib <a href="https://kenwheeler.github.io/slick/"> slick slider</a>)</li>
+       <li>Conexão com Internet (para estabelecer conexão com as cdn do <a href="https://developers.google.com/speed/libraries?hl=pt-br">jquery</a> e da lib <a href="https://kenwheeler.github.io/slick/"> slick slider</a>)</li>
      </ul>
    </div>
      <div style="margin-top: 25px;">
