@@ -10,6 +10,7 @@ a {
 button {
   background-color: inherit;
   border: none;
+  cursor: pointer;
 }
 
 body {
@@ -28,12 +29,28 @@ textarea {
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: 1px solid #666666;
+  border-bottom: 1px solid rgba(102, 102, 102, 0.5);
   font-family: "BMWTypeNext-Light", Arial, Helvetica, sans-serif;
   font-weight: lighter;
   font-size: 14px;
   line-height: 17px;
   padding-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+  outline: none;
+}
+
+input:hover,
+select:hover,
+option:hover,
+textarea:hover {
+  border-bottom: 2px solid rgba(102, 102, 102, 0.5);
+}
+
+input:focus,
+select:focus,
+option:focus,
+textarea:focus {
+  border-bottom: 2px solid var(--color-blue);
 }
 
 .container {

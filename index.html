@@ -38,8 +38,22 @@
                   <div class="btn-default-text">WHATSAPP</div>
                 </a>
               </div>
-              <div class="menu menu-on-desktop">
-                <h2>TESTE</h2>
+              <div class="menu-slider menu-on-desktop">
+                <div class="menu">
+                  <div class="menu-item">1</div>
+                  <div class="menu-item">2</div>
+                  <div class="menu-item">3</div>
+                  <div class="menu-item">4</div>
+                  <div class="menu-item">5</div>
+                  <div class="menu-item">6</div>
+                  <div class="menu-item">7</div>
+                  <div class="menu-item">8</div>
+                  <div class="menu-item">X</div>
+                  <div class="menu-item">Z</div>
+                  <div class="menu-item">M</div>
+                  <div class="menu-item">i</div>
+                  <div class="menu-item">Plug-in-Hybrid</div>
+                </div>
               </div>
             </div>
             <div class="logo-bmw">
@@ -51,6 +65,98 @@
       <div class="quotation quotation-btn show-quotation-on-mobile">
         <div class="quotation-content">
           <p>Solicite uma cotação</p>
+        </div>
+      </div>
+      <div class="menu-slider-content menu-slider-slick">
+        <div class="main-vehicles-item" style="max-width: 350px">
+          <div class="main-vehicles-item-image">
+            <img src="./assets/imgs/veiculos/serie1.png" alt="" />
+          </div>
+          <div class="main-vehicles-item-title">
+            <h3>BMW Série 1</h3>
+          </div>
+          <div class="main-vehicles-item-btns-call-actions">
+            <button class="quotation-btn main-vehicles-item-btn main-vehicles-item-btn-quotation">Cotação</button>
+          </div>
+          <div class="main-vehicles-item-midias">
+            <p>Compartilhe</p>
+            <div class="main-vehicles-item-btns-midias">
+              <a href="#"><i class="icon-facebook"></i></a>
+              <a href="#"><i class="icon-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="main-vehicles-item" style="max-width: 350px">
+          <div class="main-vehicles-item-image">
+            <img src="./assets/imgs/veiculos/serie1.png" alt="" />
+          </div>
+          <div class="main-vehicles-item-title">
+            <h3>BMW Série 2</h3>
+          </div>
+          <div class="main-vehicles-item-btns-call-actions">
+            <button class="quotation-btn main-vehicles-item-btn main-vehicles-item-btn-quotation">Cotação</button>
+          </div>
+          <div class="main-vehicles-item-midias">
+            <p>Compartilhe</p>
+            <div class="main-vehicles-item-btns-midias">
+              <a href="#"><i class="icon-facebook"></i></a>
+              <a href="#"><i class="icon-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="main-vehicles-item" style="max-width: 350px">
+          <div class="main-vehicles-item-image">
+            <img src="./assets/imgs/veiculos/serie1.png" alt="" />
+          </div>
+          <div class="main-vehicles-item-title">
+            <h3>BMW Série 3</h3>
+          </div>
+          <div class="main-vehicles-item-btns-call-actions">
+            <button class="quotation-btn main-vehicles-item-btn main-vehicles-item-btn-quotation">Cotação</button>
+          </div>
+          <div class="main-vehicles-item-midias">
+            <p>Compartilhe</p>
+            <div class="main-vehicles-item-btns-midias">
+              <a href="#"><i class="icon-facebook"></i></a>
+              <a href="#"><i class="icon-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="main-vehicles-item" style="max-width: 350px">
+          <div class="main-vehicles-item-image">
+            <img src="./assets/imgs/veiculos/serie1.png" alt="" />
+          </div>
+          <div class="main-vehicles-item-title">
+            <h3>BMW Série 4</h3>
+          </div>
+          <div class="main-vehicles-item-btns-call-actions">
+            <button class="quotation-btn main-vehicles-item-btn main-vehicles-item-btn-quotation">Cotação</button>
+          </div>
+          <div class="main-vehicles-item-midias">
+            <p>Compartilhe</p>
+            <div class="main-vehicles-item-btns-midias">
+              <a href="#"><i class="icon-facebook"></i></a>
+              <a href="#"><i class="icon-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="main-vehicles-item" style="max-width: 350px">
+          <div class="main-vehicles-item-image">
+            <img src="./assets/imgs/veiculos/serie1.png" alt="" />
+          </div>
+          <div class="main-vehicles-item-title">
+            <h3>BMW Série 5</h3>
+          </div>
+          <div class="main-vehicles-item-btns-call-actions">
+            <button class="quotation-btn main-vehicles-item-btn main-vehicles-item-btn-quotation">Cotação</button>
+          </div>
+          <div class="main-vehicles-item-midias">
+            <p>Compartilhe</p>
+            <div class="main-vehicles-item-btns-midias">
+              <a href="#"><i class="icon-facebook"></i></a>
+              <a href="#"><i class="icon-whatsapp"></i></a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="hero-slider">
@@ -299,6 +405,13 @@
             <option value="bwm">BWM M5</option>
           </select>
           <textarea name="mensagem" id="mensagem" placeholder="Mensagem"></textarea>
+          <div class="form-group form-group-checkbox">
+            <input type="checkbox" id="accept" name="accept" />
+            <label for="#">Aceito a <b>Política de Privacidade</b>.</label>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn-submit-extra-form">Enviar</button>
+          </div>
         </form>
       </div>
     </div>
@@ -311,6 +424,17 @@
         slidesToScroll: 1,
         dots: true,
         arrows: false,
+      });
+    </script>
+    <script>
+      $(".menu-slider-slick").slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        dots: true,
+        arrows: true,
+        prevArrow: '<i class="icon-seta-a-esquerda"></i>',
+        nextArrow: '<i class="icon-seta-a-direita"></i>',
       });
     </script>
     <script>
